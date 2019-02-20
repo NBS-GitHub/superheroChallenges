@@ -1,0 +1,20 @@
+header {
+    background-color: var(--yellow);
+    padding: 3vw;
+    margin: 1vw 0;
+    border-radius: 2vw;
+    box-shadow: 0 0 3vw var(--yellow)
+}
+
+header h1 {
+    text-align: center;
+    letter-spacing: 5px;
+    line-height: 1.3;
+    font-size: 6vw;
+}
+
+@media (orientation: portrait) {
+    header h1 {
+        font-size: 10vw;
+    }
+}

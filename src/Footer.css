@@ -1,0 +1,19 @@
+footer {
+    text-align: center;
+    background-color: var(--yellow);
+    border-radius: 2vw;
+    box-shadow: 0 0 3vw var(--yellow)
+}
+
+footer h3 {
+    line-height: 1.8;
+    letter-spacing: 2px;
+    font-size: 3.5vw;
+}
+
+@media (orientation: portrait) {
+    footer h3 {
+        line-height: 2;
+        font-size: 5.4vw;
+    }
+}

@@ -1,0 +1,39 @@
+.active, .done {
+    border-radius: 2vw;
+    padding: 2vw;
+    margin: 2vw 1vw;
+    background-color: rgba(0,0,0,.3);
+}
+
+.active {
+    border: 3px solid var(--red);
+    box-shadow: 0 0 3vw inset var(--red), 0 0 2vw black;
+}
+
+.done {
+    border: 3px solid var(--yellow);
+    box-shadow: 0 0 3vw inset var(--yellow), 0 0 2vw black;;
+}
+
+.active h2, .done h3, .active p {
+    background-color: #010101;
+    color: var(--yellow);
+    border-radius: 2vw;
+    padding: 4vw 2vw;
+    margin: 2vw;
+    text-align: center;
+    letter-spacing: 4px;
+    font-size: 5vw;
+    box-shadow: 0 0 3vw #010101;
+}
+
+.active p {
+    background-color: var(--yellow);
+    color: #010101;
+    padding: 2vw 1vw;
+    letter-spacing: 3px;
+    font-size: 4vw;
+    margin: 2vw auto;
+    width: 80%;
+    box-shadow: 0 0 3vw var(--yellow);
+}

@@ -1,0 +1,56 @@
+.task {
+    background-color: white;
+    border-radius: 2vw;
+    padding: 2vw 3vw;
+    margin: 2vw;
+    font-size: 3vw;
+    box-shadow: 0 0 3vw #fff;
+}
+
+.task .row {
+    font-size: 4vw;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.task .row:nth-child(2) {
+    font-size: 3.5vw;
+}
+
+.unfinished .buttons {
+display: flex;
+justify-content: space-around;
+padding: 2vw 4vw;
+}
+
+.task button {
+    padding: 1vw 4vw;
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    font-size: 4vw;
+    background-color: #fff;
+    border: 2px solid #010101;
+    border-radius: 1vw;
+    transition: .3s;
+    outline: none;
+}
+
+.unfinished button:nth-child(1):hover {
+    border: 2px solid var(--yellow);
+    background-color: var(--yellow);
+}
+
+.unfinished button:nth-child(2):hover {
+    border: 2px solid var(--blue);
+    background-color: var(--blue);
+}
+
+.finished button {
+display: block;
+margin: 0 auto;
+}
+
+.finished button:hover {
+    border: 2px solid var(--red);
+    background-color: var(--red);
+}
