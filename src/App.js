@@ -87,14 +87,14 @@ class App extends Component {
           <main>
             <Switch>
 
-              <Route path='/' exact render={
+              <Route path={`${process.env.PUBLIC_URL}/`} exact render={
                 () =>
                   <div>
                     <AddTask add={this.addTask} />
                     <TaskList tasks={this.state.tasks} delete={this.deleteTask} change={this.changeTaskStatus} />
                   </div>
               } />
-              <Route path='/about' component={About} />
+              <Route path={`${process.env.PUBLIC_URL}/about`} component={About} />
               <Route component={Error} />
 
             </Switch>
