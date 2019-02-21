@@ -13,10 +13,6 @@ flex-grow: 1;
 padding: 2vw;
 }
 
-.newLine::after {
-
-}
-
 @media (orientation: portrait) {
     .appWrap {
         width: 92%;

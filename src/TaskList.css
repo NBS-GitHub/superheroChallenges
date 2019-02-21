@@ -1,11 +1,11 @@
-.active, .done {
+.todo, .done {
     border-radius: 2vw;
     padding: 2vw;
     margin: 2vw 1vw;
     background-color: rgba(0,0,0,.3);
 }
 
-.active {
+.todo {
     border: 3px solid var(--red);
     box-shadow: 0 0 3vw inset var(--red), 0 0 2vw black;
 }
@@ -15,7 +15,7 @@
     box-shadow: 0 0 3vw inset var(--yellow), 0 0 2vw black;;
 }
 
-.active h2, .done h3, .active p {
+.todo h2, .done h3, .todo p {
     background-color: #010101;
     color: var(--yellow);
     border-radius: 2vw;
@@ -27,7 +27,7 @@
     box-shadow: 0 0 3vw #010101;
 }
 
-.active p {
+.todo p {
     background-color: var(--yellow);
     color: #010101;
     padding: 2vw 1vw;
@@ -36,4 +36,30 @@
     margin: 2vw auto;
     width: 80%;
     box-shadow: 0 0 3vw var(--yellow);
+}
+
+@media (orientation: portrait) {
+    .todo h2, .done h3, .todo p {
+        padding: 6vw 3vw;
+        font-size: 6vw;
+    }
+
+    .todo p {
+    padding: 4vw 2vw;
+    font-size: 5vw;
+    margin: 3vw auto;
+    }
+}
+
+@media (min-width: 1024px) {
+    .todo h2, .done h3, .todo p {
+        font-size: 36px;
+    }
+
+}
+
+@media (orientation: portrait) and (min-height: 1024px) {
+    .todo h2, .done h3, .todo p {
+        font-size: 5vw;
+    }
 }

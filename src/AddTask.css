@@ -28,7 +28,6 @@ form h2, .inputs{
 }
 
 .row {
-    /* background-color: gray; */
     margin: 1vw;
     padding: 1vw;
 }
@@ -131,4 +130,133 @@ form button {
 form button:hover {
 background-color: var(--red);
 color: #fff;
+}
+
+@media (orientation: portrait) { 
+    form h2{
+        font-size: 7vw;
+    }
+    
+    .inputs {
+        font-size: 6vw;
+    }
+    
+    .row {
+        margin: 2vw;
+        padding: 2vw;
+    }
+    
+    input[type='text'] {
+        font-size: 5vw;
+    }
+    
+    input[type='checkbox'] {
+        width: 9vw;
+        height: 4.5vw;
+        border-radius: 4.5vw;
+    }
+    
+    input[type='checkbox']::before {
+        width: 4.5vw;
+        height: 4.5vw;
+        border-radius: 2.25vw;
+
+    }
+    
+    input:checked[type='checkbox']::before {
+        left: 4.5vw;
+    }
+    
+    input[type='date'] {
+        font-size: 5vw;
+    }
+    
+    form button {
+        font-size: 6vw;
+        padding: 2vw 5vw;
+    }
+}
+
+@media (min-width: 1024px) {
+    form h2{
+        font-size: 45px;
+    }
+    
+    .inputs {
+        font-size: 36px;
+    }
+    
+    .row {
+        margin: 1vw;
+        padding: 1vw;
+    }
+    
+    input[type='text'] {
+        font-size: 36px;
+    }
+    
+    input[type='checkbox'] {
+        width: 60px;
+        height: 30px;
+        border-radius: 30px;
+    }
+    
+    input[type='checkbox']::before {
+        width: 30px;
+        height: 30px;
+        border-radius: 15px;
+
+    }
+    
+    input:checked[type='checkbox']::before {
+        left: 30px;
+    }
+    
+    input[type='date'] {
+        font-size: 36px;
+    }
+    
+    form button {
+        font-size: 45px;
+        padding: 1vw 4vw;
+    }
+}
+
+@media (orientation: portrait) and (min-height: 1024px) {
+    form h2{
+        font-size: 7vw;
+    }
+    
+    .inputs {
+        font-size: 5vw;
+    }
+    
+    input[type='text'] {
+        font-size: 5vw
+    }
+    
+    input[type='checkbox'] {
+        width: 9vw;
+        height: 4.5vw;
+        border-radius: 4.5vw;
+    }
+    
+    input[type='checkbox']::before {
+        width: 4.5vw;
+        height: 4.5vw;
+        border-radius: 2.25vw;
+
+    }
+    
+    input:checked[type='checkbox']::before {
+        left: 4.5vw;
+    }
+    
+    input[type='date'] {
+        font-size: 5vw;
+    }
+    
+    form button {
+        font-size: 7vw;
+    }
 }

@@ -7,7 +7,7 @@ footer {
 
 footer h3 {
     line-height: 1.8;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     font-size: 3.5vw;
 }
 
@@ -15,5 +15,11 @@ footer h3 {
     footer h3 {
         line-height: 2;
         font-size: 5.4vw;
+    }
+}
+
+@media (min-width: 1024px) {
+    footer h3 {
+        font-size: 36px;
     }
 }

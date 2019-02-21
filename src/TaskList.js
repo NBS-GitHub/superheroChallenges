@@ -23,7 +23,7 @@ const TaskList = props => {
     const doneTasks = done.map(task => <Task key={task.id} task={task} delete={props.delete} change={props.change} />);
     return (
         <div className='tasksWrapper'>
-            <div className='active'>
+            <div className='todo'>
                 <h2>Challenges to do {active.length > 0 && `(${active.length})`}</h2>
                 {activeTasks.length > 0 ? activeTasks : <p>All challenges done</p>}
             </div>

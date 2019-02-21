@@ -3,7 +3,6 @@
     border-radius: 2vw;
     padding: 2vw 3vw;
     margin: 2vw;
-    font-size: 3vw;
     box-shadow: 0 0 3vw #fff;
 }
 
@@ -11,6 +10,7 @@
     font-size: 4vw;
     letter-spacing: 2px;
     text-align: center;
+    line-height: 1.2;
 }
 
 .task .row:nth-child(2) {
@@ -53,4 +53,57 @@ margin: 0 auto;
 .finished button:hover {
     border: 2px solid var(--red);
     background-color: var(--red);
+}
+
+@media (orientation: portrait) { 
+    .task .row {
+        font-size: 6vw;
+    }
+    
+    .task .row:nth-child(2) {
+        font-size: 5vw;
+    }
+    
+    .unfinished .buttons {
+    padding: 4vw 6vw;
+    }
+    
+    .task button {
+        padding: 2vw 6vw;
+        font-size: 6vw;
+    }
+}
+
+@media (min-width: 1024px) {
+    .task .row {
+        font-size: 30px;
+    }
+    
+    .task .row:nth-child(2) {
+        font-size: 25px;
+    }
+    
+    .unfinished .buttons {
+    padding: 2vw 4vw;
+    }
+    
+    .task button {
+        padding: 1vw 3vw;
+        font-size: 30px;
+    }
+}
+
+@media (orientation: portrait) and (min-height: 1024px) {
+    .task .row {
+        font-size: 5vw;
+    }
+    
+    .task .row:nth-child(2) {
+        font-size: 4.5vw;
+    }
+    
+    .task button {
+        padding: 2vw 5vw;
+        font-size: 5vw;
+    }
 }

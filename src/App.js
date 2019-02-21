@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 import Header from './Header';
 import AddTask from './AddTask';
 import TaskList from './TaskList';
+import About from './About';
+import Error from './Error';
 import Footer from './Footer';
 
 class App extends Component {
@@ -44,8 +47,6 @@ class App extends Component {
     }
   }
 
-  // counter = 9;
-
   deleteTask = id => {
     let tasks = [...this.state.tasks];
     tasks = tasks.filter(task => task.id !== id);
@@ -72,7 +73,6 @@ class App extends Component {
       active: true,
       finishDate: null
     }
-    // this.counter++;
     this.setState(prevState => ({
       tasks: [...prevState.tasks, task]
     }));
@@ -81,14 +81,27 @@ class App extends Component {
 
   render() {
     return (
-      <div className='appWrap'>
-        <Header />
-        <main>
-          <AddTask add={this.addTask} />
-          <TaskList tasks={this.state.tasks} delete={this.deleteTask} change={this.changeTaskStatus} />
-        </main>
-        <Footer />
-      </div>
+      <Router>
+        <div className='appWrap'>
+          <Header />
+          <main>
+            <Switch>
+
+              <Route path='/' exact render={
+                () =>
+                  <div>
+                    <AddTask add={this.addTask} />
+                    <TaskList tasks={this.state.tasks} delete={this.deleteTask} change={this.changeTaskStatus} />
+                  </div>
+              } />
+              <Route path='/about' component={About} />
+              <Route component={Error} />
+
+            </Switch>
+          </main>
+          <Footer />
+        </div>
+      </Router >
     );
   }
 }
