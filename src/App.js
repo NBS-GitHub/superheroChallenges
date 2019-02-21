@@ -86,7 +86,7 @@ class App extends Component {
           <Header />
           <main>
             <Switch>
-              <Route path={'/'} exact render={
+              <Route path='/' exact render={
                 () =>
                   <div>
                     <AddTask add={this.addTask} />
