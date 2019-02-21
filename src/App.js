@@ -81,22 +81,20 @@ class App extends Component {
 
   render() {
     return (
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <div className='appWrap'>
           <Header />
           <main>
             <Switch>
-
-              <Route path={`${process.env.PUBLIC_URL}/`} exact render={
+              <Route path={'/'} exact render={
                 () =>
                   <div>
                     <AddTask add={this.addTask} />
                     <TaskList tasks={this.state.tasks} delete={this.deleteTask} change={this.changeTaskStatus} />
                   </div>
               } />
-              <Route path={`${process.env.PUBLIC_URL}/about`} component={About} />
+              <Route path='/about' component={About} />
               <Route component={Error} />
-
             </Switch>
           </main>
           <Footer />
