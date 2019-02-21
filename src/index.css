@@ -22,29 +22,29 @@ body {
 
 @media (orientation: landscape) {
   body {
-    background-image: url('/images/bg1.jpg');
+    background-image: url('bg1.jpg');
   }
 }
 
 @media (min-width: 641px) and (orientation: landscape) {
   body {
-    background-image: url('/images/bg2.jpg');
+    background-image: url('bg2.jpg');
   }
 }
 
 @media (min-width: 1281px) and (orientation: landscape) {
   body {
-    background-image: url('/images/bg3.jpg');
+    background-image: url('bg3.jpg');
   }
 }
 
 @media (orientation: portrait) {
   body {
-    background-image: url('/images/bg2vert.jpg');
+    background-image: url('bg2vert.jpg');
   }
 }
 @media (min-height: 641px) and (orientation: portrait) {
   body {
-    background-image: url('/images/bg3vert.jpg');
+    background-image: url('bg3vert.jpg');
   }
 }
