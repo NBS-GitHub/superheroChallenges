@@ -94,7 +94,7 @@ class App extends Component {
                   </div>
               } />
               <Route path='/about' component={About} />
-              <Route path='' component={Error} />
+              <Route component={Error} />
             </Switch>
           </main>
           <Footer />
