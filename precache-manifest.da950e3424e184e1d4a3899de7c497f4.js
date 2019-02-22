@@ -24,19 +24,19 @@ self.__precacheManifest = [
     "url": "/superheroChallenges/static/js/runtime~main.5b90ec7b.js"
   },
   {
-    "revision": "5aeb51e2b2117363fed5",
-    "url": "/superheroChallenges/static/js/main.5aeb51e2.chunk.js"
+    "revision": "f1c6df969b3a67c67192",
+    "url": "/superheroChallenges/static/js/main.f1c6df96.chunk.js"
   },
   {
     "revision": "7950242be09023e06605",
     "url": "/superheroChallenges/static/js/2.7950242b.chunk.js"
   },
   {
-    "revision": "5aeb51e2b2117363fed5",
+    "revision": "f1c6df969b3a67c67192",
     "url": "/superheroChallenges/static/css/main.0a3404a6.chunk.css"
   },
   {
-    "revision": "91d92a2f96d947865f74038396d8c459",
+    "revision": "81daecc325f63801a84474fb7bb17709",
     "url": "/superheroChallenges/index.html"
   }
 ];
