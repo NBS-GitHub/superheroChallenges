@@ -29,7 +29,7 @@ class App extends Component {
         },
         {
           id: this.drawId(),
-          text: 'milk x2, bread, gift for aunt',
+          text: 'milk x2, bread, ham, cheese',
           date: '2019-05-23',
           important: false,
           active: true,
