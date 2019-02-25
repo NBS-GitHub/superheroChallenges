@@ -1,4 +1,4 @@
-# the Superhero Challenges Todo App
+# the Superhero Challenges React Todo App
 
 ### The React application created with create-react-app.
 ---
